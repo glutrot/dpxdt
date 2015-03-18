@@ -151,8 +151,8 @@ def main(argv):
         logging.getLogger().setLevel(logging.DEBUG)
 
     real_main(
-        new_url=argv[1],
-        baseline_url=argv[2],
+        new_url=argv[2],
+        baseline_url=argv[1],
         upload_build_id=FLAGS.upload_build_id,
         upload_release_name=FLAGS.upload_release_name)
 
